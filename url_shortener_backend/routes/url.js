@@ -10,7 +10,6 @@ const shortUrlRoute = express.Router();
 shortUrlRoute.post("/", async (req, res) => {
     const longUrl = req.body.longUrl;
     const baseUrl = config.get("baseURL");
-    // console.log("base url " + baseUrl + "   " + longUrl);
 
     if (!validUrl.isUri(baseUrl)) {
         return res.status(401).json("Invalid base url!");

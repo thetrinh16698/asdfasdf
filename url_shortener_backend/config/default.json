@@ -1,5 +1,4 @@
 {
     "mongoURI": "mongodb+srv://thetrinh166:tieuthichu@urlshortener.xvzfk.mongodb.net/<dbname>?retryWrites=true&w=majority",
-    "baseURL": "https://url-shrinker-backend.herokuapp.com",
-    "allowedClick" : 10
+    "baseURL": "https://url-shrinker-backend.herokuapp.com"
 }

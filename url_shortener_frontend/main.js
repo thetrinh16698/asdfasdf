@@ -1,6 +1,5 @@
 const urlForm = document.getElementById('url-form');
 const longUrl = document.getElementById('longUrl');
-// const status = document.getElementById('status');
 const confirmationShow = document.getElementById('confirmationShow');
 const longLink = document.getElementById('longLink');
 const shortLink = document.getElementById('shortLink');
@@ -19,7 +18,6 @@ const formsubmit = e => {
         })
     })
     .then(res => res.json())
-    // .then(data => console.log(data))
     .then(data  => {
         confirmationShow.innerHTML = `The link is ready now!!!`;
         longLink.innerHTML = `<a target="_blank" href=${data.longUrl}>${data.longUrl}</a>`
