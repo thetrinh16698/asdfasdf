@@ -1,21 +1,21 @@
-# url-shortener
+# URL-shortener
 
 Link to live website: https://urlcutt.herokuapp.com/
 
 1. How to use:
-- Copy an url you want to shorten.
+- Copy an URL you want to shorten.
 - Paste it to the input field.
 - Hit the button to get your link shorten.
 - You will see the number of clicks go up when you refresh the page.
 
 2. Design decisions, brief description on the solution
 - When I first saw the idea about this task, I choose MongoDB for the database immediately because it is a NoSQL database and
-the setup time of MongoDB is very fast and easy to approach. And for the backend, I choose Express.js(Node.js) because that
+the setup time of MongoDB is very fast and easy to approach. And for the backend, I choose Express.js (Node.js) because that
 the first thing I learn when I started working with backend. It has enough feature for me to finish the task. Because I
-think this task is focus more about the backend with database design and API so the frontend is just a simple HTML(styled
+think this task is focus more about the backend with database design and API so the frontend is just a simple HTML (styled
 with Bootstrap) and a JavaScript file to connect to the backend.
 - First I have to think about the model of the database. For this task, I need to store the original url, the shortened
-url, the hash code of the shortened url and then the click count. Only click count has the type number, the rest are string.
+url, the hash code of the shortened URL and then the click count. Only click count has the type number, the rest are string.
 - I had created 2 route functions, the first one is "shortUrlRoute" and "getShortenUrlRoute". The first one was created to 
 validate if the url is correct or not, then it will add the url to the database and also create a code which indicate the url
 and save or if the original url is present in the database it will return its shorten url and the number of access in the 
@@ -32,4 +32,4 @@ Then I let the server run.
 send the request without the frontend. 
 - Then for the frontend part, I choose to just go simple with everything. 
 
-*Note: the PHP file in the frontend folder is for tricking the heroku so I can deploy the frontend part to heroku. 
+*Note: the PHP file in the frontend folder is for tricking Heroku so I can deploy the frontend part to Heroku. 
