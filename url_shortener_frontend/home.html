@@ -7,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Url shortener</title>
+    <title>URL Shortener</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>URL Shrinker</h1>
+        <h1>URL Shortener</h1>
         <form id="url-form">
-            <label for="longUrl" class="sr-only">Url</label>
-            <input required placeholder="Url" type="url" name="longUrl" id="longUrl" class="form-control col mr-2">
-            <button class="btn btn-success" type="submit" id="status">Shrink</button>
+            <label for="longUrl" class="sr-only">URL</label>
+            <input required placeholder="Put your URL here" type="url" name="longUrl" id="longUrl" class="form-control col mr-2">
+            <button class="btn btn-success" type="submit" id="status">Shorten It</button>
         </form>
 
         <p id="confirmationShow"></p>
@@ -26,7 +26,7 @@
                 <tr>
                     <th>Long URL</th>
                     <th>Short URL</th>
-                    <th>Clicks</th>
+                    <th>Clicks Count</th>
                 </tr>
             </thead>
             <tbody>
